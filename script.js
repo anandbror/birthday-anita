@@ -66,3 +66,38 @@ heart.remove();
 },9000);
 
 },500);
+/* Rose Petals */
+
+setInterval(()=>{
+
+const petal=document.createElement("div");
+
+petal.innerHTML="🌹";
+
+petal.style.position="fixed";
+
+petal.style.left=Math.random()*100+"vw";
+
+petal.style.top="-40px";
+
+petal.style.fontSize=(20+Math.random()*15)+"px";
+
+petal.style.zIndex="1";
+
+petal.style.transition="transform 8s linear";
+
+document.body.appendChild(petal);
+
+setTimeout(()=>{
+
+petal.style.transform="translateY(120vh) rotate(720deg)";
+
+},100);
+
+setTimeout(()=>{
+
+petal.remove();
+
+},8500);
+
+},800);
