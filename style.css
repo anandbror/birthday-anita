@@ -65,3 +65,17 @@ to{
 box-shadow:0 0 45px hotpink;
 }
 }
+#musicBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+padding:12px 18px;
+border:none;
+border-radius:40px;
+background:#ff2f7d;
+color:white;
+font-size:17px;
+cursor:pointer;
+box-shadow:0 0 20px hotpink;
+z-index:9999;
+}
