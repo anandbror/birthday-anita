@@ -139,3 +139,8 @@ setTimeout(()=>heart.remove(),6000);
 }
 
 }
+function backToCard() {
+    document.getElementById("finalScreen").style.display = "none";
+    document.querySelector(".container").style.display = "flex";
+    document.getElementById("giftBox").style.display = "block";
+}
