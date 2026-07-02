@@ -1,0 +1,1 @@
+Copy PHOTO1.jpg and PHOTO2.jpg into this folder, then upload all files to your GitHub repository.
