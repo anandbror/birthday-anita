@@ -41,3 +41,28 @@ document.getElementById("btn").addEventListener("click", function () {
     this.innerHTML = "❤️ Happy Birthday Anita ❤️";
 
 });
+/* Floating Hearts */
+
+setInterval(()=>{
+
+const heart=document.createElement("div");
+
+heart.className="float-heart";
+
+const emoji=["❤️","💖","💕","💗","💘"];
+
+heart.innerHTML=emoji[Math.floor(Math.random()*emoji.length)];
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(5+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},9000);
+
+},500);
