@@ -101,3 +101,16 @@ petal.remove();
 },8500);
 
 },800);
+/* Music */
+
+const music=document.getElementById("bgmusic");
+
+const musicBtn=document.getElementById("musicBtn");
+
+musicBtn.onclick=function(){
+
+music.play();
+
+musicBtn.innerHTML="🎶 Playing...";
+
+};
