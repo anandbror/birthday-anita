@@ -114,3 +114,28 @@ music.play();
 musicBtn.innerHTML="🎶 Playing...";
 
 };
+function openGift(){
+
+document.getElementById("giftBox").style.display="none";
+
+document.getElementById("finalScreen").style.display="flex";
+
+for(let i=0;i<200;i++){
+
+let heart=document.createElement("div");
+
+heart.className="float-heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(3+Math.random()*3)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),6000);
+
+}
+
+}
