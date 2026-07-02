@@ -31,3 +31,37 @@ opacity:0;
 }
 
 }
+/* Card always on top */
+.card{
+position:relative;
+z-index:100;
+}
+
+/* Hearts behind card */
+.float-heart{
+z-index:2 !important;
+}
+
+/* Fireworks behind card */
+.fire{
+z-index:2 !important;
+}
+
+/* Stars behind everything */
+.stars{
+z-index:0;
+}
+
+/* Card glow animation */
+.card{
+animation:glowCard 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowCard{
+from{
+box-shadow:0 0 20px rgba(255,255,255,.25);
+}
+to{
+box-shadow:0 0 45px hotpink;
+}
+}
